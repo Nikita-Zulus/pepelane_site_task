@@ -1,0 +1,370 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Codec-Pro";
+  src: url("./fonts/CodecPro-Thin.ttf");
+}
+@font-face {
+  font-family: "Codec-Pro-Bold";
+  src: url("./fonts/CodecPro-Bold.ttf");
+}
+.App {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 64px;
+  padding-right: 64px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+p {
+  font-family: Codec-Pro;
+}
+.logo,
+.nightmode,
+.controlls,
+.user,
+.header__rightside {
+  display: flex;
+  align-items: center;
+}
+.nightmode {
+  margin-right: 107px;
+}
+.controlls {
+  margin-right: 29px;
+}
+.logo__description {
+  margin-left: 65px;
+}
+.nightmode__description {
+  margin-left: 18px;
+}
+.controlls__bell {
+  margin-left: 29px;
+}
+.user__pic {
+  margin-left: 16px;
+}
+.user__name,
+.error__title {
+  font-family: Codec-Pro-Bold;
+}
+.error__title {
+  font-size: 40px;
+  margin-bottom: 24px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.body-main {
+  width: 100%;
+  background: #f3f4f7;
+  border-radius: 48px;
+  /* height: 100%; */
+  padding-left: 64px;
+  padding-right: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.error__subtitle {
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+.error__reloaded {
+  background: #4959ff;
+  border-radius: 12px;
+  width: 161px;
+  height: 48px;
+  outline: none;
+  user-select: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.error__reloaded:active,
+.rent-btn:active {
+  transform: scale(0.8);
+  transition: transform 0.08s ease;
+}
+.item {
+  width: 373.33px;
+  height: 164px;
+  background: #fcfcfc;
+  border-radius: 32px;
+  text-decoration: none;
+}
+.item__title {
+  color: black;
+  font-family: Codec-Pro-Bold;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+.item__subtitle {
+  font-family: Codec-Pro;
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+.item__price {
+  font-family: Codec-Pro-Bold;
+  font-size: 14px;
+  color: #f84ab3;
+}
+
+.item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 32px;
+}
+.item__image {
+  margin: 24px;
+  width: 88px;
+  height: 88px;
+  border-radius: 24px;
+}
+.item__description {
+  margin-top: 40px;
+  margin-right: 44px;
+}
+.rentitems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.header-body__title,
+.blue-word {
+  display: flex;
+  font-family: Codec-Pro-Bold;
+  font-size: 40px;
+}
+.blue-word {
+  color: #4959ff;
+}
+.add-item {
+  display: flex;
+  align-items: center;
+}
+.add-item__title {
+  font-family: Codec-Pro-Bold;
+  font-size: 20px;
+  color: #4959ff;
+  margin-right: 20px;
+}
+.arrow-down__btn {
+  margin-left: 12px;
+}
+.header-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 56px;
+  margin-bottom: 40px;
+}
+.detailedItem__image {
+  width: 512px;
+  height: 500px;
+  /*   height: 100%;
+  width: auto; */
+  border-radius: 24px;
+  margin-right: 64px;
+}
+.item__title_big-font {
+  font-size: 40px;
+}
+.detailedItem {
+  display: flex;
+}
+.features__title_big-font {
+  font-family: Codec-Pro-Bold;
+  font-size: 24px;
+  color: #012345;
+  margin-bottom: 32px;
+}
+.features__title {
+  font-family: Codec-Pro-Bold;
+  font-size: 16px;
+}
+.features__one,
+.features__two {
+  display: flex;
+  align-items: center;
+}
+.features__one {
+  margin-bottom: 16px;
+}
+.detailedItem__footer {
+  background: #f3f4f7;
+  border-radius: 16px;
+  height: 80px;
+  /* width: auto; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-bottom: 20px;
+}
+.rent {
+  display: flex;
+  align-items: center;
+  font-family: Codec-Pro-Bold;
+  font-size: 20px;
+}
+.item__price_big-font {
+  font-size: 20px;
+}
+.rent-btn {
+  background: #4959ff;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  user-select: none;
+  width: 136px;
+  height: 48px;
+  color: #fcfcfc;
+  font-size: 16px;
+  font-family: Codec-Pro-Bold;
+  cursor: pointer;
+}
+.specifications__title,
+.team__title,
+.rent-terms__title {
+  font-family: Codec-Pro-Bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+.radiobuttons {
+  display: flex;
+}
+.detailedItem__radio {
+  visibility: hidden;
+}
+.radiobuttons__lable {
+  margin-right: 40px;
+}
+.features__img {
+  margin-right: 24px;
+}
+.features {
+  margin-bottom: 45px;
+}
+@media (max-width: 1080px) {
+  .detailedItem {
+    flex-direction: column;
+  }
+  .detailedItem__image {
+    margin-right: 0;
+    margin-bottom: 22px;
+    height: auto;
+    width: 100%;
+  }
+  .logo__description,
+  .nightmode__description,
+  .user__name {
+    display: none;
+  }
+  .nightmode {
+    margin-right: 0;
+  }
+  .controlls__bell {
+    margin-left: 0;
+  }
+  .user__pic,
+  .logo__image,
+  .nightmode__image,
+  .controlls__bell,
+  .controlls__pointsmenu {
+    transform: scale(0.7);
+  }
+  .user__pic {
+    margin-left: 0px;
+  }
+  .App {
+    padding: 16px;
+  }
+  .header-body__title,
+  .blue-word {
+    font-size: 18px;
+  }
+  .header-body__title {
+    align-items: center;
+  }
+  .arrow-down__btn {
+    margin-left: 0px;
+    transform: scale(0.7);
+  }
+  .body-main {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+  .add-item__title {
+    font-size: 14px;
+    margin-right: 0;
+  }
+  .add-item__btn {
+    transform: scale(0.7);
+  }
+  .detailedItem__footer {
+    position: fixed;
+    bottom: 10px;
+    transform: translateX(50%);
+    right: 50%;
+    margin-bottom: 0;
+  }
+  .features {
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 440px) {
+  .item {
+    width: auto;
+  }
+  .add-item__title {
+    font-size: 10px;
+  }
+  .header-body__title,
+  .blue-word {
+    font-size: 13px;
+  }
+  .body-main {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .user__pic,
+  .logo__image,
+  .nightmode__image,
+  .controlls__bell,
+  .controlls__pointsmenu {
+    transform: scale(0.6);
+  }
+  .controlls {
+    margin-right: 0;
+  }
+  .header {
+    margin-bottom: 20px;
+  }
+}
